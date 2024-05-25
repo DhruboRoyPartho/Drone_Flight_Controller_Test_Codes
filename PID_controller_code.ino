@@ -13,10 +13,10 @@
 #define led1 5
 #define led2 13
 #define led3 6
-#define motor1 1;
-#define motor2 2;
-#define motor3 3;
-#define motor4 4;
+#define motor1 1
+#define motor2 2
+#define motor3 3
+#define motor4 4
 
 
 // MPU6050 variables
@@ -335,10 +335,10 @@ void loop() {
 
     // 18% minimul power during flight
     int ThrottleIdle = 1180;
-    if(mitirInput1 < ThrottleIdle) MotorInput1 = ThrottleIdle;
-    if(mitirInput2 < ThrottleIdle) MotorInput2 = ThrottleIdle;
-    if(mitirInput3 < ThrottleIdle) MotorInput3 = ThrottleIdle;
-    if(mitirInput4 < ThrottleIdle) MotorInput4 = ThrottleIdle;
+    if(MotorInput1 < ThrottleIdle) MotorInput1 = ThrottleIdle;
+    if(MotorInput2 < ThrottleIdle) MotorInput2 = ThrottleIdle;
+    if(MotorInput3 < ThrottleIdle) MotorInput3 = ThrottleIdle;
+    if(MotorInput4 < ThrottleIdle) MotorInput4 = ThrottleIdle;
 
     // Turning off motors
     int ThrottleCutOff = 1000;
