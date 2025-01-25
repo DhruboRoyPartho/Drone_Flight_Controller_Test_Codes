@@ -1,1 +1,1 @@
-This a test codes repository. Not completed.
+This is a test codes repository. Not completed.
